@@ -11,7 +11,7 @@ public class Main {
 		//사용자 정보 확인
 		Player player = new Player();
 		String usrInput;
-		System.out.println("[Main] 플레이어의 이름을 입력해주세요...");
+		System.out.println("플레이어의 이름을 입력해주세요...");
 		
 		Scanner sc=new Scanner(System.in);
 		usrInput = sc.next();
