@@ -16,7 +16,7 @@ public class Game {
 		
 	}
 	
-	//컴퓨터가 가위바위보 중 한가지를 선택
+	
 	static int comRps() {
 			
 		Random r = new Random();
