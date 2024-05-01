@@ -58,6 +58,7 @@ public class Game {
 					cnt++;
 					win++;
 					break;
+					default: System.out.println("다시 입력해주세요.");
 					}
 					
 				}else if(usrInput==2) {
@@ -74,7 +75,7 @@ public class Game {
 					cnt++;
 					lose++; 
 					break;
-					
+					default: System.out.println("다시 입력해주세요.");
 					}
 				}else if(usrInput==3) {
 					switch(com) {
@@ -90,25 +91,45 @@ public class Game {
 					cnt++;
 					tie++;
 					break;
-					
+					default: System.out.println("다시 입력해주세요.");
 					}
+					
+				}else {
+					System.out.println("!! 올바른 숫자를 입력해주세요. !!");
+					continue;
 					
 				}
 				
 			}//while문 end
 			
-			System.out.println("* 5판 "+win+"승 "+lose+"패 "+tie+"무 입니다. \n* 게임이 끝났습니다. 어떻게 하시겠습니까? \n* 1.다시 시작 2.게임 종료" );
-			
-			Scanner sc = new Scanner(System.in);
-			usrInput = sc.nextInt();
-			
-			if(usrInput==1) {
-				Main.main(null);
-			}else if(usrInput==2) {
-				System.out.println("*** 감사합니다. 게임을 종료합니다. ***");
-				System.exit(0);
-			}
+			System.out.println("* 5판 "+win+"승 "+lose+"패 "+tie+"무 입니다. \n* 게임이 끝났습니다.");
+			restartOrExit();
 			
 		}
+	
+	
+	public static void restartOrExit() {
+		Scanner sc = new Scanner(System.in);
+		int usrAnswer;
+		int loop=0;
+		
+		while(loop==0) {
+			
+			System.out.println("* 어떻게 하시겠습니까? 1.다시 시작 2.게임 종료");
+			usrAnswer = sc.nextInt();
+			
+			if(usrAnswer==1) {
+				loop++;
+				Main.main(null);
+			}else if(usrAnswer==2) {
+				loop++;
+				System.out.println("*** 감사합니다. 게임을 종료합니다. ***");
+				System.exit(0);
+			}else {
+				System.out.println("* 다시 입력해주세요.");
+				continue;
+			}
+		}
+	}
 	
 }
