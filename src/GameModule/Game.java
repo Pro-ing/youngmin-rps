@@ -1,9 +1,9 @@
-package GameUtil;
+package GameModule;
 
 import java.util.Random;
 import java.util.Scanner;
 
-import rockScissorPaperGame.Main;
+import Game.Main;
 
 public class Game {
 	

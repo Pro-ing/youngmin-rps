@@ -1,8 +1,8 @@
-package rockScissorPaperGame;
+package Game;
 
 import java.util.Scanner;
 
-import GameUtil.Player;
+import GameModule.Player;
 
 public class Main {
 
