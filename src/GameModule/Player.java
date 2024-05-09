@@ -1,8 +1,8 @@
-package GameUtil;
+package GameModule;
 
 import java.util.HashMap;
 
-import GameUtil.Game;
+import GameModule.Game;
 /**
  * 플레이어 정보 생성 및 저장
  * */
