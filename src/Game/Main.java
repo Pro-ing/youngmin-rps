@@ -2,6 +2,7 @@ package Game;
 
 import java.util.Scanner;
 
+import GameModule.Game;
 import GameModule.Player;
 
 public class Main {
@@ -16,6 +17,7 @@ public class Main {
 		Scanner sc=new Scanner(System.in);
 		usrInput = sc.next();
 		player.savePlayerInfo(usrInput, 0);
+		Game.gameProcess();
 		
 	
 
