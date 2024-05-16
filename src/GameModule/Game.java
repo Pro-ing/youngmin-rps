@@ -7,15 +7,6 @@ import Game.Main;
 
 public class Game {
 	
-	static void gameStart(int usrAnswer) {
-		
-		if(usrAnswer==0 || usrAnswer==1) {
-			System.out.println("* 가위 바위 보 게임을 시작하겠습니다.게임은 5판 진행됩니다. \n* 가장 최근의 기록만 저장됩니다.");
-			gameProcess();
-		}
-		
-	}
-	
 	
 	static int comRps() {
 			
@@ -28,7 +19,9 @@ public class Game {
 			
 	}
 	
-	static void gameProcess() {
+	public static void gameProcess() {
+		
+		System.out.println("* 가위 바위 보 게임을 시작하겠습니다.게임은 5판 진행됩니다.");
 		
 		int cnt=0; //전체 게임 횟수 count
 		int win=0;
